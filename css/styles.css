@@ -1,0 +1,71 @@
+#nav-panel .primary-list {
+    margin-right: -10px;
+}
+#nav-panel .primary-list i.fa {
+    padding-right: 4px;
+}
+div[role="main"] {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.map-container {
+    background-color: #ccddff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0; 
+}
+.ui-controlgroup-horizontal.toolbars .ui-controlgroup-controls {
+    width: 100%;
+}
+.toolbar-item {
+    display: inline-block;
+    text-decoration: none;
+    margin: 4px 12px;
+}
+.toolbar-item > a {
+    display: block;
+}
+.toolbar-item i.fa, 
+.toolbar-item .title {
+    font-weight: normal;
+    display: block;
+    text-align: center;
+}
+.toolbar-item i.fa {
+    color: #000;
+}
+.toolbar-item .title {
+    color: #333;
+    font-size: 0.75em;
+    margin-top: 8px;
+}
+
+.toolbar-primary {
+    float: left;
+    width: 100%;
+    margin-right: -250px;
+    text-align: center;
+}
+.toolbar-primary .toolbar-content {
+    margin-right: 250px;
+}
+.toolbar-secondary {
+    float: left;
+    width: 250px;
+    text-align: center;
+}
+
+.fa-colour.fa-lg {
+    font-size: 28px;
+}
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
