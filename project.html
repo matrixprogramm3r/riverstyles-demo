@@ -1,16 +1,18 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Project</title>
+        <title>River Styles</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/jquery.mobile.css" />
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery.mobile.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile.css" />
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile.js"></script>
+        <script src="js/jquery.mq-plugins.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
-        <div data-role="page" class="jqm-demos ui-responsive-panel" id="panel-responsive-page1" data-title="Panel responsive page" data-url="panel-responsive-page1">
+        <div data-role="page" class="jqm-demos ui-responsive-panel" id="project-page" data-title="Project" data-url="project">
             <div data-role="header">
                 <h1>Project</h1>
                 <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
@@ -30,7 +32,7 @@
                     </ul>
                     <ul data-role="listview" data-inset="true">
                         <li>
-                            <a href="#" onclick="alert('Not implemented yet.')">
+                            <a href="attachments.html">
                                 <h2>Attachments</h2>
                                 <p>Table 2A (CSV), Graph 123 (PNG)</p>
                             </a>
@@ -45,19 +47,7 @@
                 </form>
             </div>
             <!-- /content -->
-            <div data-role="panel" data-display="reveal" data-theme="a" id="nav-panel">
-                <ul data-role="listview" data-inset="false" data-divider-theme="a" class="primary-list">
-                    <li data-role="list-divider">Projects</li>
-                    <li data-icon="false"><a href="project.html"><i class="fa fa-plus-circle"></i> Add</a></li>
-                    <li data-icon="false"><a href="index.html" data-icon="bars"><i class="fa fa-list-alt"></i> List</a></li>
-                    <li data-role="list-divider">Media</li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-plus-circle"></i> Add</a></li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-list-alt"></i> List</a></li>
-                    <li data-role="list-divider">Settings</li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-user"></i> Account Details</a></li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-user fa-cog"></i> Remote Server</a></li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-cloud-download"></i> Synchronise With Server</a></li>
-                </ul>
+            <div data-role="ajaxpanel" data-display="reveal" data-theme="a" data-dismissible="false" data-template="global/nav_panel_content.html" id="nav-panel">
             </div>
             <!-- /panel -->
         </div>

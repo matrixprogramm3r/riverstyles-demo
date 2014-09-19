@@ -1,9 +1,10 @@
 #nav-panel .primary-list {
-    margin-right: -10px;
+    margin-right: 6px;
 }
 #nav-panel .primary-list i.fa {
     padding-right: 4px;
 }
+
 div[role="main"] {
     position: absolute;
     top: 44px;
@@ -25,7 +26,6 @@ div[role="main"] {
 .toolbar-item {
     display: inline-block;
     text-decoration: none;
-    margin: 4px 12px;
 }
 .toolbar-item > a {
     display: block;
@@ -48,24 +48,39 @@ div[role="main"] {
 .toolbar-primary {
     float: left;
     width: 100%;
-    margin-right: -250px;
+    margin-right: -33%;
     text-align: center;
 }
 .toolbar-primary .toolbar-content {
-    margin-right: 250px;
+    margin-right: 33%;
 }
 .toolbar-secondary {
     float: left;
-    width: 250px;
+    width: 33%;
     text-align: center;
 }
 
+.toolbar-primary .toolbar-item {
+    width: 11%; 
+}
+.toolbar-secondary .toolbar-item {
+    width: 22%;
+}
+
 .fa-colour.fa-lg {
-    font-size: 28px;
 }
 
 .clearfix:after {
   content:"";
   display:table;
   clear:both;
+}
+
+@media only screen and (max-width: 640px) { 
+    .toolbar-item .title {
+        display: none;
+    }
+    .fa.fa-lg {
+        font-size: 1em;
+    }
 }

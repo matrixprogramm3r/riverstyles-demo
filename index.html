@@ -1,53 +1,56 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Page Title</title>
+        <title>River Styles</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/jquery.mobile.css" />
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery.mobile.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile.css" />
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile.js"></script>
+        <script src="js/jquery.mq-plugins.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
-        <div data-role="page" class="jqm-demos ui-responsive-panel" id="panel-responsive-page1" data-title="Panel responsive page" data-url="panel-responsive-page1">
+        <div data-role="page" class="jqm-demos ui-responsive-panel" id="projects-page" data-title="Projects" data-url="projects">
             <div data-role="header">
-                <h1>RiverStyles Prototype</h1>
-                <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+                <h1>Projects</h1>
+                <a href="#nav-panel" class="btn-menu" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="project.html" class="ui-btn-right ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right btn-add">Add</a>
             </div>
             <!-- /header -->
             <div role="main" class="ui-content jqm-content jqm-fullwidth">
 				<ul data-role="listview" data-inset="true">
 					<li>
-                        <a href="project.html">
+                        <a href="project.html?id=5">
                             <h2>Project 5</h2>
                             <p>Brief info about the project</p>
                             <p class="ui-li-aside"><strong>15/09/14</strong></p>
                         </a>
                     </li>
 					<li>
-                        <a href="project.html">
+                        <a href="project.html?id=4">
                             <h2>Project 4</h2>
                             <p>Brief info about the project</p>
                             <p class="ui-li-aside"><strong>11/09/14</strong></p>
                         </a>
                     </li>
 					<li>
-                        <a href="project.html">
+                        <a href="project.html?id=3">
                             <h2>Project 3</h2>
                             <p>Brief info about the project</p>
                             <p class="ui-li-aside"><strong>07/09/14</strong></p>
                         </a>
                     </li>
 					<li>
-                        <a href="project.html">
+                        <a href="project.html?id=2">
                             <h2>Project 2</h2>
                             <p>Brief info about the project</p>
                             <p class="ui-li-aside"><strong>05/09/14</strong></p>
                         </a>
                     </li>
 					<li>
-                        <a href="project.html">
+                        <a href="project.html?id=1">
                             <h2>Project 1</h2>
                             <p>Brief info about the project</p>
                             <p class="ui-li-aside"><strong>02/09/14</strong></p>
@@ -56,20 +59,7 @@
                 </ul>
             </div>
             <!-- /content -->
-            <div data-role="panel" data-display="reveal" data-theme="a" id="nav-panel">
-                <ul data-role="listview" data-inset="false" data-divider-theme="a" class="primary-list">
-                    <li data-role="list-divider">Projects</li>
-                    <!-- <li><a href="#"><span class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" style="margin:0;"></span> Add</a></li> -->
-                    <li data-icon="false"><a href="project.html"><i class="fa fa-plus-circle"></i> Add</a></li>
-                    <li data-icon="false"><a href="index.html" data-icon="bars"><i class="fa fa-list-alt"></i> List</a></li>
-                    <li data-role="list-divider">Media</li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-plus-circle"></i> Add</a></li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-list-alt"></i> List</a></li>
-                    <li data-role="list-divider">Settings</li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-user"></i> Account Details</a></li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-user fa-cog"></i> Remote Server</a></li>
-                    <li data-icon="false"><a href="#"><i class="fa fa-cloud-download"></i> Synchronise With Server</a></li>
-                </ul>
+            <div data-role="ajaxpanel" data-display="reveal" data-theme="a" data-dismissible="false" data-template="global/nav_panel_content.html" id="nav-panel">
             </div>
             <!-- /panel -->
         </div>
